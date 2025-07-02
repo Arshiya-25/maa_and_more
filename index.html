@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare+</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+</head>
+<body>
+    
+    <!-- header navbar section start -->
+     <header>
+        <!-- logo name -->
+          <a href="#" class="logo gradient-text"><span>M</span>aa<span>&M</span>ore</a>
+
+
+        <!-- navbar link -->
+        <nav class="navbar">
+          <a href="#home"><i class="fas fa-house"></i> Home</a>
+          <a href="#tracker"><i class="fas fa-baby"></i> Pregnancy Tracker</a>
+          <a href="#consultation"><i class="fas fa-user-md"></i> Consultation</a>
+          <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+        </nav>
+        
+
+        <div class="fas fa-bars"></div>
+     </header>
+    <!-- header navbar section end -->
+
+    <!-- home section start -->
+
+    <section id="home" class="home">
+        <div class="row">
+
+            <div class="images">
+                <img src="./images/home.png" alt="">
+            </div>
+
+            <div class="content">
+                <h1>
+                  <span class="gradient-text">Nurturing </span><span style="color: var(--black);"> Every </span><br>
+                  <span style="color: var(--black);">Step Of </span><span class="gradient-text">Your </span><br>
+                  <span class="gradient-text">Journey</span>
+                </h1>
+                <a href="#"><button class="button">Read More</button></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section id="pregnancy" class="tracker-section">
+      <h1 class="heading"><span class="gradient-text">Pregnancy Tracker</span></h1>
+      <p class="title">Track your pregnancy week by week with personalized updates about your baby's development and changes in your body.</p>
+      <div class="tracker-container">
+        <label for="due-date" class="tracker-label">Enter Your Due Date</label>
+        <input type="date" id="due-date" class="tracker-input" max="2025-12-31">
+        <button id="calculate-week" class="button">Calculate My Week</button>
+      </div>
+      <div class="tracker-result" id="tracker-result" style="display: none;">
+        <h2>You're in <span id="current-week">Week 0</span>!</h2>
+        <p id="baby-size">Baby is the size of a <strong>...</strong></p>
+        <button id="view-updates" class="button">View Detailed Updates</button>
+    
+        <div class="timeline-container">
+          <div class="timeline-box" id="baby-box">
+            <h3>Your Baby</h3>
+            <p>Your baby's development details will appear here.</p>
+          </div>
+          <div class="timeline-box" id="body-box">
+            <h3>Your Body</h3>
+            <p>Changes in your body this week.</p>
+          </div>
+          <div class="timeline-box" id="tasks-box">
+            <h3>Things To Do</h3>
+            <p>Helpful tips and things to prepare.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+<!-- Doctor Section Start -->
+<section id="doctor" class="card">
+  <div class="container">
+
+    <h1 class="heading"><span class="gradient-text">Expert Consultation</span></h1>
+    <p class="title">Connect with experienced healthcare professionals for personalized advice .</p>
+
+    <div class="box-container">
+
+      <!-- Doctor 1 -->
+      <div class="box">
+        <img src="./images/doctor-2.jpg" alt="Dr. Aisha Mehra, Cardiologist">
+        <div class="content">
+          <h2>Dr. Aisha Mehra</h2>
+          <p>Cardiologist</p>
+          <p class="rating">⭐️ 4.9 (124 reviews)</p>
+          <div class="button-group">
+            <button class="profile-btn">View Profile</button>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div class="box">
+        <img src="./images/doctor-1.jpg" alt="Dr. Rohan Verma, Pediatrician">
+        <div class="content">
+          <h2>Dr. Rohan Verma</h2>
+          <p>Pediatrician</p>
+          <p class="rating">⭐️ 4.9 (94 reviews)</p>
+          <div class="button-group">
+            <button class="profile-btn">View Profile</button>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 3 -->
+      <div class="box">
+        <img src="./images/doctor-3.jpg" alt="Dr. Sneha Kapoor, General Physician">
+        <div class="content">
+          <h2>Dr. Sneh Kapoor</h2>
+          <p>General Physician</p>
+          <p class="rating">⭐️ 4.7 (120 reviews)</p>
+          <div class="button-group">
+            <button class="profile-btn">View Profile</button>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Doctor Section End -->
+
+<!-- Contact Section Start -->
+<section id="contact" class="contact">
+  <h1 class="heading"><span class="gradient-text">Contact Us</span></h1>
+  <h3 class="title">You can talk to us anytime.</h3>
+
+  <div class="row">
+    <!-- Image Column -->
+    <div class="images">
+      <img src="./images/form.png" alt="Contact illustration">
+    </div>
+
+    <!-- Form Column -->
+    <div class="form-container">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="number" placeholder="Phone Number" required>
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+      <input type="submit" value="Send">
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Footer Section Start -->
+<section class="footer">
+
+  <!-- About Box -->
+  <div class="box">
+    <h2 class="logo"><span>P</span>ulse <span>P</span>oint</h2>
+    <p>Your health is our priority. We offer expert care and compassionate service around the clock.</p>
+  </div>
+
+  <!-- Social Links Box -->
+  <div class="box">
+    <h2 class="logo"><span>S</span>hare</h2>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+    <a href="#">Pinterest</a>
+  </div>
+
+  <!-- Navigation Links Box -->
+  <div class="box">
+    <h2 class="logo"><span>L</span>inks</h2>
+    <a href="#">Home</a>
+    <a href="#">Abou Us</a>
+    <a href="#">Our Doctor</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Footer Credit -->
+  <h1 class="credit">© 2025 <span>Pulse Point</span>. All rights reserved.</h1>
+
+</section>
+<!-- Footer Section End -->
+
+    <!-- jqeury cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <!-- custom js file link -->
+      <script src="./js/main.js"></script>
+</body>
+</html>
