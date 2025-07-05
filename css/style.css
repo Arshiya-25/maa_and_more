@@ -159,7 +159,6 @@ header .fa-times{
     min-height: 100vh;
     padding-top: 10rem;
 }
-
 .home .row{
     display: flex;
     align-items: center;
@@ -167,16 +166,13 @@ header .fa-times{
     width: 85%;
     margin: 0 auto;
 }
-
 .home .row .images img{
     margin-top: 20px;
     height: 75vh;
 }
-
 .home .content{
     padding-left: 3rem;
 }
-
 .home .content h1{
     font-size: 6rem;
     line-height: 1.3;
@@ -232,7 +228,6 @@ header .fa-times{
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .card .box-container .box {
   width: 30rem;
   border-radius: 0.5rem;
@@ -253,13 +248,11 @@ header .fa-times{
   padding: 1.5rem;
   text-align: center;
 }
-
 .card .box-container .box .content h2 {
   font-size: 2rem;
   color: var(--black);
   margin-bottom: 0.5rem;
 }
-
 .card .box-container .box .content p {
   font-size: 1.6rem;
   color: var(--black);
@@ -277,7 +270,6 @@ header .fa-times{
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .contact .row {
   display: flex;
   align-items: center;
@@ -312,7 +304,6 @@ header .fa-times{
   color: var(--lavender);
   box-sizing: border-box;
 }
-
 .contact .form-container textarea {
   resize: none;
   height: 15rem;
@@ -324,7 +315,6 @@ header .fa-times{
   outline: none;
   border: 0.2rem solid var(--lavender);
 }
-
 .contact .form-container input[type="submit"] {
   background: var(--lavender);
   color: var(--white);
@@ -333,7 +323,6 @@ header .fa-times{
   width: 100%;
   transition: 0.3s;
 }
-
 .contact .form-container input[type="submit"]:hover {
   background: var(--white);
   color: var(--lavender);
@@ -349,12 +338,10 @@ header .fa-times{
   justify-content: center;
   padding: 3rem 1rem;
 }
-
 .footer .box {
   width: 30rem;
   margin: 2rem;
 }
-
 .footer .box:first-child {
   text-align: left;
 }
@@ -365,11 +352,9 @@ header .fa-times{
   padding-bottom: 1rem;
   color: var(--white);
 }
-
 .footer .box .logo span {
   color: var(--lavender);
 }
-
 .footer .box .logo:hover {
   color: var(--lavender);
 }
@@ -388,7 +373,6 @@ header .fa-times{
   padding: 0.3rem 0;
   text-decoration: none;
 }
-
 .footer .box a:hover {
   text-decoration: underline;
 }
@@ -403,7 +387,6 @@ header .fa-times{
   color: var(--white);
   border-top: 0.2rem solid var(--white);
 }
-
 .footer .credit span {
   color: var(--lavender);
   text-decoration: underline;
@@ -421,7 +404,6 @@ header .fa-times{
     header .fa-bars{
         display: block;
     }
-    
     header .navbar{
         position: fixed;
         top: -100rem; left: 0;
@@ -429,7 +411,6 @@ header .fa-times{
         background: var(--white);
         opacity: 0;
     }
-
     header .nav-toggle{
         top: 5.5rem;
         opacity: 1;
@@ -439,34 +420,27 @@ header .fa-times{
     .home .row{
         flex-flow: column;
     }
-
     .home .row .content{
         align-items: center;
     }
-
     .home .row .content .images img{
         width: 100%;
     }
-
     .contact .row {
       flex-direction: column;
     } 
-
     .contact .images img {
       max-width: 100%;
       height: auto;
     }
-
     .contact .form-container {
       padding: 0;
       max-width: 100%;
     }
-
     .contact .form-container input[type="submit"] {
       width: 100%;
     }
 }
-
 
 /* Doctor Rating */
 .rating {
@@ -494,7 +468,6 @@ header .fa-times{
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .profile-btn:hover {
   background-color: rgba(186, 146, 229, 0.1); /* light pastel bg */
 }
@@ -510,7 +483,6 @@ header .fa-times{
   cursor: pointer;
   transition: 0.3s;
 }
-
 .book-btn:hover {
   opacity: 0.9;
 }
@@ -521,7 +493,6 @@ header .fa-times{
   padding: 5rem 2rem;
   text-align: center;
 }
-
 .tracker-container {
   margin: 3rem auto;
   background: linear-gradient(90deg, #e8dcff, #d6ecff);
@@ -530,14 +501,12 @@ header .fa-times{
   max-width: 600px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .tracker-label {
   font-size: 2rem;
   font-weight: bold;
   display: block;
   margin-bottom: 1rem;
 }
-
 .tracker-input {
   padding: 1rem;
   font-size: 1.6rem;
@@ -546,26 +515,21 @@ header .fa-times{
   width: 80%;
   margin-bottom: 1.5rem;
 }
-
 #calculate-week {
   margin-top: 1rem;
 }
-
 .tracker-result {
   margin-top: 4rem;
   text-align: center;
 }
-
 .tracker-result h2 {
   font-size: 3rem;
   color: var(--lavender);
 }
-
 .tracker-result p {
   font-size: 1.8rem;
   margin: 1rem 0;
 }
-
 .timeline-container {
   display: flex;
   justify-content: center;
@@ -573,7 +537,6 @@ header .fa-times{
   flex-wrap: wrap;
   margin-top: 3rem;
 }
-
 .timeline-box {
   background: white;
   box-shadow: 0 0.4rem 0.6rem rgba(0,0,0,0.1);
@@ -583,13 +546,11 @@ header .fa-times{
   flex: 1 1 250px;
   text-align: left;
 }
-
 .timeline-box h3 {
   color: var(--lavender);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 .timeline-box p {
   font-size: 1.4rem;
 }
@@ -634,7 +595,6 @@ header .fa-times{
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .modal-subtitle {
   font-size: 1.2rem;
   color: #777;
@@ -662,11 +622,9 @@ header .fa-times{
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
 }
-
 .modal-links a {
   text-decoration: none;
 }
-
 .modal-links a:hover {
   text-decoration: underline;
 }
@@ -683,7 +641,6 @@ header .fa-times{
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .modal-login-btn:hover {
   background-color: #6932d4;
 }
