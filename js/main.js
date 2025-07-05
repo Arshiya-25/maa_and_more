@@ -1,20 +1,27 @@
 //   navbar function
-$(document).ready(function () {
-  $(".fa-bars").click(function () {
-    $(this).toggleClass("fa-times");
-    $(".navbar").toggleClass("nav-toggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.querySelector(".fa-bars");
+  const navbar = document.querySelector(".navbar");
+  const header = document.querySelector("header");
+
+  menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("fa-times");
+    navbar.classList.toggle("nav-toggle");
   });
 
-  $(window).on("scroll load", function () {
-    $(".fa-bars").removeClass("fa-times");
-    $(".navbar").removeClass("nav-toggle");
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("load", handleScroll);
 
-    if ($(Window).scrollTop() > 30) {
-      $("header").addClass("header-active");
+  function handleScroll() {
+    menuIcon.classList.remove("fa-times");
+    navbar.classList.remove("nav-toggle");
+
+    if (window.scrollY > 30) {
+      header.classList.add("header-active");
     } else {
-      $("header").removeClass("header-active");
+      header.classList.remove("header-active");
     }
-  });
+  }
 });
 
 // pregancy tracker section
@@ -87,3 +94,26 @@ document.addEventListener("DOMContentLoaded", () => {
       ).textContent = `Consider scheduling your next prenatal appointment and monitoring diet.`;
   });
 });
+
+// LOGIN MODAL TOGGLE
+document.addEventListener("DOMContentLoaded", () => {
+  const loginBtn = document.querySelector(".login-btn");
+  const loginModal = document.getElementById("loginModal");
+  const closeModal = document.getElementById("closeLoginModal");
+
+  loginBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginModal.style.display = "block";
+  });
+
+  closeModal.addEventListener("click", () => {
+    loginModal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === loginModal) {
+      loginModal.style.display = "none";
+    }
+  });
+});
+  

@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthCare+</title>
+    <title>Maa_and_More</title>
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- css file link -->
     <link rel="stylesheet" href="./css/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    </head>
 </head>
 <body>
-    
     <!-- header navbar section start -->
      <header>
         <!-- logo name -->
-          <a href="#" class="logo gradient-text"><span>M</span>aa<span>&M</span>ore</a>
-
+        <a href="#" class="logo gradient-text"><span>M</span>aa<span>&M</span>ore</a>
 
         <!-- navbar link -->
-        <nav class="navbar">
-          <a href="#home"><i class="fas fa-house"></i> Home</a>
-          <a href="#tracker"><i class="fas fa-baby"></i> Pregnancy Tracker</a>
-          <a href="#consultation"><i class="fas fa-user-md"></i> Consultation</a>
-          <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
-        </nav>
-        
+        <div class="nav-right">
+            <nav class="navbar">
+              <a href="#home"><i class="fas fa-house"></i> Home</a>
+              <a href="#pregnancy"><i class="fas fa-baby"></i> Pregnancy Tracker</a>
+              <a href="#doctor"><i class="fas fa-user-md"></i> Consultation</a>
+              <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+            </nav>
+            <!-- login button -->
+            <a href="#" class="login-btn"><i class="fas fa-arrow-right-to-bracket"></i> Log In</a>
+        </div>
 
-        <div class="fas fa-bars"></div>
+        <i class="fas fa-bars"></i>
      </header>
     <!-- header navbar section end -->
 
     <!-- home section start -->
-
     <section id="home" class="home">
         <div class="row">
 
             <div class="images">
                 <img src="./images/home.png" alt="">
             </div>
-
             <div class="content">
                 <h1>
                   <span class="gradient-text">Nurturing </span><span style="color: var(--black);"> Every </span><br>
@@ -53,10 +48,8 @@
                 </h1>
                 <a href="#"><button class="button">Read More</button></a>
             </div>
-
         </div>
     </section>
-
     <!-- home section end -->
 
     <!-- about section start -->
@@ -72,7 +65,6 @@
         <h2>You're in <span id="current-week">Week 0</span>!</h2>
         <p id="baby-size">Baby is the size of a <strong>...</strong></p>
         <button id="view-updates" class="button">View Detailed Updates</button>
-    
         <div class="timeline-container">
           <div class="timeline-box" id="baby-box">
             <h3>Your Baby</h3>
@@ -91,122 +83,133 @@
     </section>
     <!-- about section end -->
 
-<!-- Doctor Section Start -->
-<section id="doctor" class="card">
-  <div class="container">
+    <!-- Doctor Section Start -->
+    <section id="doctor" class="card">
+        <div class="container">
+        <h1 class="heading"><span class="gradient-text">Expert Consultation</span></h1>
+        <p class="title">Connect with experienced healthcare professionals for personalized advice .</p>
+            <div class="box-container">
+                <!-- Doctor 1 -->
+                <div class="box">
+                    <img src="./images/doctor-2.jpg" alt="Dr. Aisha Mehra, Cardiologist">
+                    <div class="content">
+                        <h2>Dr. Aisha Mehra</h2>
+                        <p>Cardiologist</p>
+                        <p class="rating">⭐️ 4.9 (124 reviews)</p>
+                        <div class="button-group">
+                            <button class="profile-btn">View Profile</button>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="box">
+                    <img src="./images/doctor-1.jpg" alt="Dr. Rohan Verma, Pediatrician">
+                    <div class="content">
+                        <h2>Dr. Rohan Verma</h2>
+                        <p>Pediatrician</p>
+                        <p class="rating">⭐️ 4.9 (94 reviews)</p>
+                            <div class="button-group">
+                                <button class="profile-btn">View Profile</button>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="box">
+                    <img src="./images/doctor-3.jpg" alt="Dr. Sneha Kapoor, General Physician">
+                    <div class="content">
+                        <h2>Dr. Sneh Kapoor</h2>
+                        <p>General Physician</p>
+                        <p class="rating">⭐️ 4.7 (120 reviews)</p>
+                        <div class="button-group">
+                            <button class="profile-btn">View Profile</button>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
 
-    <h1 class="heading"><span class="gradient-text">Expert Consultation</span></h1>
-    <p class="title">Connect with experienced healthcare professionals for personalized advice .</p>
-
-    <div class="box-container">
-
-      <!-- Doctor 1 -->
-      <div class="box">
-        <img src="./images/doctor-2.jpg" alt="Dr. Aisha Mehra, Cardiologist">
-        <div class="content">
-          <h2>Dr. Aisha Mehra</h2>
-          <p>Cardiologist</p>
-          <p class="rating">⭐️ 4.9 (124 reviews)</p>
-          <div class="button-group">
-            <button class="profile-btn">View Profile</button>
-            <button class="book-btn">Book Now</button>
-          </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- Doctor Section End -->
 
-      <!-- Doctor 2 -->
-      <div class="box">
-        <img src="./images/doctor-1.jpg" alt="Dr. Rohan Verma, Pediatrician">
-        <div class="content">
-          <h2>Dr. Rohan Verma</h2>
-          <p>Pediatrician</p>
-          <p class="rating">⭐️ 4.9 (94 reviews)</p>
-          <div class="button-group">
-            <button class="profile-btn">View Profile</button>
-            <button class="book-btn">Book Now</button>
-          </div>
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+        <h1 class="heading"><span class="gradient-text">Contact Us</span></h1>
+        <h3 class="title">You can talk to us anytime.</h3>
+
+        <div class="row">
+            <!-- Image Column -->
+            <div class="images">
+                <img src="./images/form1.png" alt="Contact illustration">
+            </div>
+            <!-- Form Column -->
+            <div class="form-container">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="number" placeholder="Phone Number" required>
+                <textarea placeholder="Your Message" rows="6" required></textarea>
+                <input type="submit" value="Send">
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- Contact Section End -->
 
-      <!-- Doctor 3 -->
-      <div class="box">
-        <img src="./images/doctor-3.jpg" alt="Dr. Sneha Kapoor, General Physician">
-        <div class="content">
-          <h2>Dr. Sneh Kapoor</h2>
-          <p>General Physician</p>
-          <p class="rating">⭐️ 4.7 (120 reviews)</p>
-          <div class="button-group">
-            <button class="profile-btn">View Profile</button>
-            <button class="book-btn">Book Now</button>
-          </div>
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <!-- About Box -->
+        <div class="box">
+            <h2 class="logo"><span>M</span>aa<span>&M</span>ore</h2>
+            <p>Supporting mothers and babies through every step of their journey with expert guidance and compassionate care.</p>
+            <div class="social-icons">
+                <a target="_blank" style="display:inline-block; margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" style="display:inline-block; margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" style="display:inline-block;"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
-      </div>
+        <!-- Social Links Box -->
+        <div class="box">
+            <h2 class="logo"><span>M</span>ore Information</h2>
+            <a href="#">Blog</a>
+            <a href="#">Community</a>
+            <a href="#">About Us</a>
+        </div>
+        <!-- Navigation Links Box -->
+        <div class="box">
+            <h2 class="logo"><span>Q</span>uick Links</h2>
+            <a href="#home">Home</a>
+            <a href="#pregnancy">Tracker</a>
+            <a href="#doctor">Consultation</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- Footer Credit -->
+        <h1 class="credit">© 2025 <span>Maa&More</span>. All rights reserved.</h1>
+    </section>
 
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLoginModal" class="close">&times;</span>
+            <h2 class="modal-title">Login to your account</h2>
+            <p class="modal-subtitle">Access your personalized maternal and childcare journey.</p>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+            <div class="modal-links">
+                <a href="#">Forgot password?</a>
+                <a href="#">Sign up</a>
+            </div>
+            <button class="modal-login-btn">Login</button>
+        </div>
     </div>
-  </div>
-</section>
-<!-- Doctor Section End -->
-
-<!-- Contact Section Start -->
-<section id="contact" class="contact">
-  <h1 class="heading"><span class="gradient-text">Contact Us</span></h1>
-  <h3 class="title">You can talk to us anytime.</h3>
-
-  <div class="row">
-    <!-- Image Column -->
-    <div class="images">
-      <img src="./images/form.png" alt="Contact illustration">
-    </div>
-
-    <!-- Form Column -->
-    <div class="form-container">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="number" placeholder="Phone Number" required>
-      <textarea placeholder="Your Message" rows="6" required></textarea>
-      <input type="submit" value="Send">
-    </div>
-  </div>
-</section>
-<!-- Contact Section End -->
-
-<!-- Footer Section Start -->
-<section class="footer">
-
-  <!-- About Box -->
-  <div class="box">
-    <h2 class="logo"><span>P</span>ulse <span>P</span>oint</h2>
-    <p>Your health is our priority. We offer expert care and compassionate service around the clock.</p>
-  </div>
-
-  <!-- Social Links Box -->
-  <div class="box">
-    <h2 class="logo"><span>S</span>hare</h2>
-    <a href="#">Facebook</a>
-    <a href="#">Twitter</a>
-    <a href="#">Instagram</a>
-    <a href="#">Pinterest</a>
-  </div>
-
-  <!-- Navigation Links Box -->
-  <div class="box">
-    <h2 class="logo"><span>L</span>inks</h2>
-    <a href="#">Home</a>
-    <a href="#">Abou Us</a>
-    <a href="#">Our Doctor</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <!-- Footer Credit -->
-  <h1 class="credit">© 2025 <span>Pulse Point</span>. All rights reserved.</h1>
-
-</section>
-<!-- Footer Section End -->
+    <!-- Footer Section End -->
 
     <!-- jqeury cdn link -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
      <!-- custom js file link -->
-      <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
