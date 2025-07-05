@@ -7,7 +7,7 @@
 ### Key Highlights
 
 #### Interactive Pregnancy Tracker  
-Users can input their due date to receive personalized week-by-week updates. It dynamically calculates the current pregnancy week, suggests baby size comparisons (from poppy seed to watermelon 🍉), and shows stage-specific advice.
+Users can input their due date to receive personalized week-by-week updates. It dynamically calculates the current pregnancy week, suggests baby size comparisons (from poppy seed to watermelon), and shows stage-specific advice.
 
 #### Responsive & Accessible UI  
 Built with Flexbox, CSS Grid, and media queries, the layout adapts seamlessly across devices — ensuring optimal readability and navigation on mobile and desktop.
