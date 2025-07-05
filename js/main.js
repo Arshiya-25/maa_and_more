@@ -1,4 +1,4 @@
-//   navbar function
+// navbar function
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector(".fa-bars");
   const navbar = document.querySelector(".navbar");
@@ -115,5 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
       loginModal.style.display = "none";
     }
   });
+  
 });
   
